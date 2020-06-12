@@ -1,3 +1,29 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url "https://repo1.maven.org/maven2"
+        }
+        jcenter {
+            content {
+                includeVersion 'org.jetbrains.trove4j', 'trove4j', '20160824'
+            }
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.0.0'
+        classpath 'androidx.navigation:navigation-safe-args-gradle-plugin:2.1.0'
+        classpath 'com.google.protobuf:protobuf-gradle-plugin:0.8.10'
+
+        classpath 'com.jakewharton:butterknife-gradle-plugin:10.2.1'
+        classpath 'com.android.tools.lint:lint:26.6.3'
+        classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.6.1"
+
+
+    }
+
+}
 wrapper {
     distributionType = Wrapper.DistributionType.ALL
 }
