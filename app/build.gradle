@@ -8,9 +8,9 @@ sonarqube
         {
             properties
                     {
-                        property "sonar.projectName", "developerlibs"
-                        property "sonar.projectKey", "com.devlibs.android"
-                        property "sonar.language", "kotlin"
+                        property "sonar.projectName", "signal-android"
+                        property "sonar.projectKey", "com.signalasv.android"
+                        property "sonar.language", "java"
                         property "sonar.sources", "src/main/java/"
                         property "sonar.binaries", "build"
                         property "sonar.sourceEncoding", "UTF-8"
@@ -93,7 +93,7 @@ def abiPostFix = ['universal'   : 0,
 android {
     flavorDimensions "none"
     compileSdkVersion 28
-    buildToolsVersion '28.0.3'
+    buildToolsVersion '29.0.3'
     useLibrary 'org.apache.http.legacy'
 
     dexOptions {
